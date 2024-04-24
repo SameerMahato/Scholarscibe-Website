@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>SCHOLARSCRIBE </title>
+  <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/index1.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="/images/hero-bg.svg">
+  <link rel="preload" as="image" href="/images/front1.png">
+  <link rel="preload" as="image" href="/images/front2.png">
+  <link rel="preload" as="image" href="/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="/images/hero-shape-2.png">
+  <style>
+    
+.orderOnWhatsApp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.orderOnWhatsApp a {
+    display: flex;
+    align-items: center;
+}
+
+.orderOnWhatsApp .whtIcon {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .orderOnWhatsApp {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/logo1.png" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="/images/logo1.png" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="main-login">
+        {{#if userEmail}}
+        <div class="main1">
+            <p>{{userEmail}}</p>
+            <a class="log hovering" href="/index1">Logout</a>
+        </div>
+        {{else}}
+        <div class="login">
+            <a class="ab hov" href="/login">Login</a>
+            <a class="abc hov" href="/register">Signup</a>
+        </div>
+    {{/if}}
+    </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              THE NEW LEVEL OF <span class="span">TRUSTWORTHY SERVICE! </span>
+            </h1>
+
+            <p class="hero-text">
+              You have the flexibility to choose an assignment expert that suits your budget
+              and quality parameters. We have more than 2000 PhD experts available to assist with assignments. </p>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Find Assignments </span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="/images/front1.png" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="/images/front2.png" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+            {{!-- <img src="/images/hero-shape-1.svg" width="380" height="190" alt="" class="shape hero-shape-1"> --}}
+
+            <img src="/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Why students order last minute assistance with assignments from us</p>
+
+          <h2 class="h2 section-title">
+            Choose from over 2000 PhD experts who fit your <span class="span">budget and quality </span> requirements
+            for your assignments.
+          </h2>
+
+          {{!-- <p class="section-text">
+            Boost Your Competitive learning .
+          </p> --}}
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 170, 75%, 41%">
+
+                <div class="card-icon">
+                  <img src="/images/category-1.svg" width="40" height="40" loading="lazy" alt="Online Degree Programs"
+                    class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Order Preview Before Final Work</a>
+                </h3>
+
+                <p class="card-text">
+
+                  "You get a preview before making the final payment.."
+
+
+
+
+
+
+                </p>
+
+                {{!-- <span class="card-badge">Open Test</span> --}}
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 351, 83%, 61%">
+
+                <div class="card-icon">
+                  <img src="/images/payment.svg" width="40" height="40" loading="lazy" alt="Non-Degree Programs"
+                    class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Pay Using Different Channels</a>
+                </h3>
+
+                <p class="card-text">
+Secure payment options include PayPal, etc.
+
+
+
+
+                </p>
+
+                {{!-- <span class="card-badge">Open Test</span> --}}
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="/images/category-3.svg" width="40" height="40" loading="lazy" alt="Off-Campus Programs"
+                    class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Plagiarism Free Work Guaranteed</a>
+                </h3>
+
+                <p class="card-text">
+                  "We send unique content with no plagiarism.."
+
+
+
+
+
+                </p>
+
+                {{!-- <span class="card-badge">Open Test</span> --}}
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 42, 94%, 55%">
+
+                <div class="card-icon">
+                  <img src="/images/category-4.svg" width="40" height="40" loading="lazy" alt="Hybrid Distance Programs"
+                    class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Ping Us On Live Chat</a>
+                </h3>
+
+                <p class="card-text">
+                  "You can talk to us anytime around the clock. We are up for the support."
+                </p>
+
+                {{!-- <span class="card-badge">Open Test</span> --}}
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <div class="img-holder" style="--width: 520; --height: 370;">
+              <img src="/images/about.jpg" width="520" height="370" loading="lazy" alt="about banner" class="img-cover">
+            </div>
+
+            {{!-- <img src="/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
+              class="shape about-shape-1">
+
+            <img src="/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
+              class="shape about-shape-2">
+
+            <img src="/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+              class="shape about-shape-3"> --}}
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">
+
+              Expert Assignment Help: Your <span class="span">Key</span> to Academic Success.
+            </h2>
+
+            <p class="section-text">
+
+              "Experience unrivaled excellence in education with our premier ace content."
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">
+                  Experienced Assistance</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Timely Delivery</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Customized Solutions</span>
+              </li>
+
+            </ul>
+
+            <img src="/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+              class="shape about-shape-4">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Services</p>
+
+          <h2 class="h2 section-title">Pick A Services To Get Started</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="/images/service1.jpg" width="370" height="220" loading="lazy" alt="" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Online Assignment Help</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(5.0/7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">$29.00</data>
+
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="/images/service2.jpg" width="370" height="220" loading="lazy" alt="" class="img-cover">
+                </figure>
+
+                 
+
+                <div class="card-content">
+
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Custom Essay Writing Help</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 /9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">$49.00</data>
+
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="/images/course3.png" width="370" height="220" loading="lazy" alt=" " class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Programming Assignment Help</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 /7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">$35.00</data>
+
+                  <ul class="card-meta-list">
+
+
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            {{!-- --}}
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="/images/thesesis.jpg" width="370" height="220" loading="lazy" alt="" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Dissertation and Thesis Writing Help</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(5.0/7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">$29.00</data>
+
+
+
+                </div>
+
+              </div>
+            </li>
+
+            {{!-- --}}
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="/images/invest.jpg" width="370" height="220" loading="lazy" alt="" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Other Online Writing Services</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(5.0/7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">$29.00</data>
+
+
+
+                </div>
+
+              </div>
+            </li>
+            {{!-- --}}
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="/images/financial.jpg" width="370" height="220" loading="lazy" alt="" class="img-cover">
+                </figure>
+
+
+
+                <div class="card-content">
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Accounting and Finance Homework Help: </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(5.0/7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">$29.00</data>
+
+
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+
+
+          <a href="#" class="btn has-before">
+            <span class="span">Browse more Services</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="video has-bg-image" aria-label="video"
+        style="background-image: url('./assets/images/video-bg.png')">
+        <div class="container">
+
+          <div class="video-card">
+
+            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
+              <img src="/images/vid.png" width="970" height="550" loading="lazy" alt="video banner"
+                class="img-cover">
+
+              
+            </div>
+
+            <img src="/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+              class="shape video-shape-1">
+
+            <img src="/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+              class="shape video-shape-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATE
+      -->
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">2000</h3>
+
+                <p class="card-text">
+                  ORDERS DELIVERED</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">135</h3>
+
+                <p class="card-text">EXPERTS</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">9</h3>
+
+
+                <p class="card-text">OUT OF 10 RATING</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">14+</h3>
+
+                <p class="card-text">TOP WRITERS</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog has-bg-image" id="blog" aria-label="blog"
+        style="background-image: url('./assets/images/blog-bg.svg')">
+        <div class="container">
+
+          <p class="section-subtitle">From Panic to Perfect</p>
+
+          <h2 class="h2 section-title">Your Last-Minute Online Assignment Lifeline</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="/images/plag.jpg" width="370" height="370" loading="lazy" alt="" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="#" class="card-subtitle">Online</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">PLAGIARISM FREE WORK</a>
+                  </h3>
+
+
+                  <p class="card-text">
+                    We provide plagiarism free work where all our writers write each and every assignment from scratch
+                    to ensure that no content is plagiarized.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="/images/24.jpg" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="#" class="card-subtitle">Online</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">24X7 SUPPORT</a>
+                  </h3>
+
+
+
+                  <p class="card-text">
+                    SCHOLARSCRIBE.com is focused on ensuring to meet the needs of the students around the globe for
+                    their assignments.  
+
+
+
+
+
+
+
+
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="/images/sale.jpg" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="#" class="card-subtitle">Online</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      AFFORDABLE PRICES</a>
+                  </h3>
+
+
+
+                  <p class="card-text">
+                    "We ensure the best quality of assignment help service online at affordable and reasonable prices
+                    with guaranteed results."
+
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="/images/blog-shape.png" width="186" height="186" loading="lazy" alt="" class="shape blog-shape">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="/images/logo1.png" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <p class="footer-brand-text">
+            Have questions or feedback? Reach out: </p>
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">Jalandhar, Punjab</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+91 7979093342</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:Scholarscribe@gmail.com" class="footer-link">Scholarscribe@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Free plagiarism report</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Assignment Writing Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Essay Writing Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online exams</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lab reports</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Final exams</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          
+
+          
+
+          
+
+          <li>
+            <a href="#" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          
+
+          
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        {{!-- <p class="copyright">
+          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+        </p> --}}
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <div class="orderOnWhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=+919263606941&text=Hey!%20I%20need%20assignment%20help!"
+      class="btn btn-success" target="_blank">
+      <span class="whtIcon"> <i class="fab fa-whatsapp"></i></span>
+      Order/Chat On WhatsApp
+    </a>
+  </div>   <!-- - custom js link -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const addEventOnElem = function (elem, type, callback) {
+      if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
+          elem[i].addEventListener(type, callback);
+        }
+      } else {
+        elem.addEventListener(type, callback);
+      }
+    }
+
+
+
+    /**
+     * navbar toggle
+     */
+
+    const navbar = document.querySelector("[data-navbar]");
+    const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+    const navLinks = document.querySelectorAll("[data-nav-link]");
+    const overlay = document.querySelector("[data-overlay]");
+
+    const toggleNavbar = function () {
+      navbar.classList.toggle("active");
+      overlay.classList.toggle("active");
+    }
+
+    addEventOnElem(navTogglers, "click", toggleNavbar);
+
+    const closeNavbar = function () {
+      navbar.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+
+    addEventOnElem(navLinks, "click", closeNavbar);
+
+
+
+    /**
+     * header active when scroll down to 100px
+     */
+
+    const header = document.querySelector("[data-header]");
+    const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+    const activeElem = function () {
+      if (window.scrollY > 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+      } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+      }
+    }
+
+    addEventOnElem(window, "scroll", activeElem);
+  </script>
+</body>
+
+</html>
